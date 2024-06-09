@@ -18,7 +18,8 @@ A grayscale image contains shades of gray varying from black to white. Each pixe
 ### RGB Images
 RGB images are the most common type of images used in digital photography and computer graphics. An RGB image consists of three color channels: Red, Green, and Blue. Each pixel in an RGB image is represented by three values, one for each channel, which combine to produce a specific color.
 
-<!-- ![RGB Image](https://github.com/iamaayushrivastava/Image-Processing-with-OpenCV/blob/main/rgb3darray.png?raw=true) -->
+![RGB Image](https://github.com/iamaayushrivastava/Image-Processing-with-OpenCV/blob/main/rgb3darray.png)
+*Image credit: Medium/Diane Rohrer*
 
 ### Example: Understanding RGB Images
 Let’s have an example. In the illustration above, imagine the picture on the left only has a size of 5x5 pixels. Thus, the image consists of 25 pixels in total. In reality, we would barely see a picture this small, but it is a good size for illustration purposes. As you can see, the image has a grid. This grid can be used to access each pixel. On the right, we see how the python library OpenCV (cv2) stores this particular picture, namely in matrices with a shape of `[5, 5, 3]`. The last index (3) indicates the three different colors: Red, Green, and Blue. 
