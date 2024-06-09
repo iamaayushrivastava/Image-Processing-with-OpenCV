@@ -6,7 +6,7 @@ Image processing is a crucial aspect of computer vision and is widely used in va
 ## Types of Images
 
 ### Black and White (Binary) Images
-A black and white image, also known as a binary image, consists of pixels that can have only two possible values: 0 (black) and 255 (white). These images are often used in applications where the distinction between the object and the background is essential.
+A black and white image, also known as a binary image, consists of pixels with only two possible values: 0 (black) and 255 (white). These images are often used in applications where the distinction between the object and the background is essential.
 
 <!-- ![Black and White Image](https://example.com/binaryimage.png) -->
 
@@ -21,7 +21,7 @@ RGB images are the most common type of images used in digital photography and co
 <!-- ![RGB Image](https://github.com/iamaayushrivastava/Image-Processing-with-OpenCV/blob/main/rgb3darray.png?raw=true) -->
 
 ### Example: Understanding RGB Images
-Let’s have an example. In the illustration above, imagine the picture on the left only has a size of 5x5 pixels. Thus, the image consists of 25 pixels in total. In reality, we would barely see a picture this small, but it is a good size for illustration purposes. As you can see, the image has a grid. This grid can be used to access each pixel. On the right, we see how the python library OpenCV (cv2) stores this particular picture, namely in matrices with a shape of `[5, 5, 3]`. The last index (3) indicates the three different colors: Red, Green, and Blue. 
+Let’s have an example. In the illustration above, imagine the picture on the left only has a size of 5x5 pixels. Thus, the image consists of 25 pixels in total. In reality, we would barely see a picture this small, but it is a good size for illustration purposes. As you can see, the image has a grid. This grid can be used to access each pixel. On the right, we see how the python library OpenCV (cv2) stores this particular picture in matrices with a `[5, 5, 3]` shape. The last index (3) indicates the three different colors: Red, Green, and Blue. 
 
 If we now access one particular pixel, for instance at location `[4, 4]`, we receive the pixel values `[24, 23, 34]`. The first value depicts the intensity for the color red, the second one represents the intensity for the color green, and the last one for blue. In combination, these three colors yield a new color which is depicted at this particular pixel location. Those values range from 0 to 255.
 
@@ -55,11 +55,11 @@ plt.show()
 
 ## OpenCV Image Representation
 
-### OpenCV vs. PyTorch Image Representation
+### OpenCV vs PyTorch Image Representation
 OpenCV and PyTorch use different conventions for representing images:
 
-- **OpenCV**: `[height, width, color_channel]`
-- **PyTorch**: `[color_channel, height, width]`
+- **OpenCV**: `[height, width, colorchannel]`
+- **PyTorch**: `[colorchannel, height, width]`
 
 This difference is important to keep in mind when working with images across these libraries.
 
